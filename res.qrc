@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/img"/>
+    <qresource prefix="/">
+        <file>img/north.png</file>
+        <file>img/africa.png</file>
+        <file>img/south.png</file>
+        <file>img/europa.png</file>
+        <file>img/asia.png</file>
+        <file>img/australia.png</file>
+        <file>img/ocean_back_normal_temniy.png</file>
+        <file>img/coin-794.png</file>
+        <file>img/africaHoverOrange.png</file>
+        <file>img/asiaNewHover.png</file>
+        <file>img/southNewHover.png</file>
+        <file>img/northNewHover.png</file>
+        <file>img/australiaNewHover.png</file>
+        <file>img/europaNewHover.png</file>
+        <file>img/floppydiskregular_106322.png</file>
+        <file>img/Open-file-icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/conts">
+        <file>img/australia.png</file>
+        <file>img/australiaHover.png</file>
+        <file>img/south.png</file>
+        <file>img/southHover.png</file>
+        <file>img/north.png</file>
+        <file>img/northHover.png</file>
+        <file>img/europa.png</file>
+        <file>img/europaHover.png</file>
+        <file>img/africa.png</file>
+        <file>img/africaHover.png</file>
+        <file>img/only_asia.png</file>
+        <file>img/only_asiaHover.png</file>
+        <file>img/continents.png</file>
+        <file>img/BlankMap-World-Continents-Coloured.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>img/australia.png</file>
+        <file>img/australiaHover.png</file>
+    </qresource>
+</RCC>

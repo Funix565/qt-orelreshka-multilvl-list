@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/img/coin-794.png</normaloff>:/img/coin-794.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">#centralWidget {
+background-color: transparent;
+border-image: url(:/img/ocean_back_normal_temniy.png);
+background: none;
+background-repeat: none;
+}</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_europe">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>40</y>
+      <width>291</width>
+      <height>206</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_europe {
+color: #C10000;
+background-color: transparent;
+border-image: url(:/img/europa.png);
+background: none;
+background-repeat: none;
+}
+
+#pushButton_europe:hover {
+color: #C10000;
+border-image: url(:/img/europaNewHover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string> .</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_africa">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>220</y>
+      <width>357</width>
+      <height>334</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_africa {
+color: #FED52E;
+background-color: transparent;
+border-image: url(:/img/africa.png);
+background: none;
+background-repeat: none;
+}
+
+#pushButton_africa:hover {
+color: #FED52E;
+border-image: url(:/img/africaHoverOrange.png);
+}</string>
+    </property>
+    <property name="text">
+     <string> .</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_north">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>30</y>
+      <width>532</width>
+      <height>324</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_north {
+color: #00CC00;
+text-align: left;
+background-color: transparent;
+border-image: url(:/img/north.png);
+background: none;
+background-repeat: none;
+}
+
+#pushButton_north:hover {
+color: #00CC00;
+border-image: url(:/img/northNewHover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string> .</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_south">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>330</y>
+      <width>197</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_south {
+color: #008000;
+background-color: transparent;
+border-image: url(:/img/south.png);
+background: none;
+background-repeat: none;
+}
+
+#pushButton_south:hover {
+color: #008000;
+border-image: url(:/img/southNewHover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string> .</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_australia">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>350</y>
+      <width>336</width>
+      <height>272</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_australia {
+color: #C04080;
+text-align: left;
+background-color: transparent;
+border-image: url(:/img/australia.png);
+background: none;
+background-repeat: none;
+}
+
+#pushButton_australia:hover {
+color: #C04080;
+border-image: url(:/img/australiaNewHover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string> .</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_asia">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>43</y>
+      <width>506</width>
+      <height>389</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_asia {
+color: #F33E01;
+background-color: transparent;
+border-image: url(:/img/asia.png);
+background: none;
+background-repeat: none;
+}
+
+#pushButton_asia:hover {
+color: #F33E01;
+border-image: url(:/img/asiaNewHover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string> .</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget_show">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>500</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTreeWidget::item:!selected {
+border: 2px solid gainsboro;
+border-left: 2px solid gainsboro;
+border-right: 2px solid gainsboro;
+border-top: 1px solid gainsboro;
+border-bottom: 2px solid gainsboro;
+}
+QTreeWidget::item:selected {}</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">1</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>500</width>
+      <height>340</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_search">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>390</y>
+      <width>340</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_find">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>390</y>
+      <width>93</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_find {
+border-style: solid;
+border-width: 2px;
+border-color: #ffffff;
+color: #ffffff;
+background-color: #D93471;
+font-weight: bold;
+border-radius: 5px;
+}
+
+#pushButton_find:hover {
+background-color: #ef6799;
+border-color: #b8ffbd;
+}</string>
+    </property>
+    <property name="text">
+     <string>Search!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_srchName">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>385</y>
+      <width>65</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #ffffff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_north">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>160</y>
+      <width>250</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_north {
+color: #214559;
+font-size: 15pt;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_south">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>420</y>
+      <width>260</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_south {
+color: #a5d9f5;
+font-size: 14pt;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_africa">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>340</y>
+      <width>210</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_africa {
+color: #FF0000;
+font-size: 15pt;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_europe">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>130</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_europe {
+color: #FEFEFE;
+font-size: 15pt;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_asia">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>170</y>
+      <width>210</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_asia {
+color: #F5F5DC;
+font-size: 15pt;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_australia">
+    <property name="geometry">
+     <rect>
+      <x>1510</x>
+      <y>480</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_australia {
+color: #FFFACD;
+font-size: 15pt;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_host">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>390</y>
+      <width>340</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hostName">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>372</y>
+      <width>151</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+color: #ffffff;
+background-color: #800020;
+}</string>
+    </property>
+    <property name="text">
+     <string>Enter name here</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_findHost">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>390</y>
+      <width>93</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_findHost {
+border-style: solid;
+border-width: 2px;
+border-color: #ffffff;
+color: #ffffff;
+background-color: #D93471;
+font-weight: bold;
+border-radius: 5px;
+}
+
+#pushButton_findHost:hover {
+background-color: #ef6799;
+border-color: #b8ffbd;
+}</string>
+    </property>
+    <property name="text">
+     <string>Search!</string>
+    </property>
+   </widget>
+   <zorder>pushButton_europe</zorder>
+   <zorder>pushButton_africa</zorder>
+   <zorder>pushButton_australia</zorder>
+   <zorder>pushButton_asia</zorder>
+   <zorder>treeWidget_show</zorder>
+   <zorder>plainTextEdit</zorder>
+   <zorder>comboBox_search</zorder>
+   <zorder>pushButton_find</zorder>
+   <zorder>label_srchName</zorder>
+   <zorder>pushButton_north</zorder>
+   <zorder>pushButton_south</zorder>
+   <zorder>label_north</zorder>
+   <zorder>label_south</zorder>
+   <zorder>label_africa</zorder>
+   <zorder>label_europe</zorder>
+   <zorder>label_asia</zorder>
+   <zorder>label_australia</zorder>
+   <zorder>lineEdit_host</zorder>
+   <zorder>label_hostName</zorder>
+   <zorder>pushButton_findHost</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1900</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCont_action">
+    <property name="title">
+     <string>Continents</string>
+    </property>
+    <addaction name="actionZam_cont"/>
+    <addaction name="actionDel_cont"/>
+   </widget>
+   <widget class="QMenu" name="menuCtr_action">
+    <property name="title">
+     <string>Countries</string>
+    </property>
+    <addaction name="actionAdd_ctr"/>
+    <addaction name="actionZam_ctr"/>
+    <addaction name="actionDel_ctr"/>
+   </widget>
+   <widget class="QMenu" name="menuEps_action">
+    <property name="title">
+     <string>Episodes</string>
+    </property>
+    <addaction name="actionAdd_eps"/>
+    <addaction name="actionZam_eps"/>
+    <addaction name="actionDel_eps"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionOpen"/>
+   </widget>
+   <addaction name="menuCont_action"/>
+   <addaction name="menuCtr_action"/>
+   <addaction name="menuEps_action"/>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionZam_cont">
+   <property name="text">
+    <string>Edit Continent</string>
+   </property>
+  </action>
+  <action name="actionDel_cont">
+   <property name="text">
+    <string>Remove Continent</string>
+   </property>
+  </action>
+  <action name="actionAdd_ctr">
+   <property name="text">
+    <string>Add Country</string>
+   </property>
+  </action>
+  <action name="actionZam_ctr">
+   <property name="text">
+    <string>Edit Country</string>
+   </property>
+  </action>
+  <action name="actionDel_ctr">
+   <property name="text">
+    <string>Remove Country</string>
+   </property>
+  </action>
+  <action name="actionAdd_eps">
+   <property name="text">
+    <string>Add Episode</string>
+   </property>
+  </action>
+  <action name="actionZam_eps">
+   <property name="text">
+    <string>Edit Episode</string>
+   </property>
+  </action>
+  <action name="actionDel_eps">
+   <property name="text">
+    <string>Remove Episode</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/floppydiskregular_106322.png</normaloff>:/img/floppydiskregular_106322.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/Open-file-icon.png</normaloff>:/img/Open-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_DelZamFind</class>
+ <widget class="QDialog" name="Dialog_DelZamFind">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>394</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>394</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Search/Edit/Remove</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Dialog_DelZamFind {
+background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #00B4DB, stop:1 #0083B0);
+}</string>
+  </property>
+  <widget class="QLabel" name="label_act">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>5</y>
+     <width>491</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_act {
+color: #ffffff;
+}</string>
+   </property>
+   <property name="text">
+    <string>Deleting</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_info">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>471</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_info {
+color: #ffffff;
+font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>154</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_firstCont">
+      <property name="styleSheet">
+       <string notr="true">#label_firstCont {
+color: #ffffff;
+font-weight: bold;
+font-size: 16px;
+}</string>
+      </property>
+      <property name="text">
+       <string>1. Continent Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_secCtr">
+      <property name="styleSheet">
+       <string notr="true">#label_secCtr {
+color: #ffffff;
+font-weight: bold;
+font-size: 16px;
+}</string>
+      </property>
+      <property name="text">
+       <string>2. Country Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_thirdEps">
+      <property name="styleSheet">
+       <string notr="true">#label_thirdEps {
+color: #ffffff;
+font-weight: bold;
+font-size: 16px;
+}</string>
+      </property>
+      <property name="text">
+       <string>3. Episode Date</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>330</y>
+     <width>222</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_Cancel">
+      <property name="styleSheet">
+       <string notr="true">#pushButton_Cancel {
+width: 100px;
+height: 35px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_ok">
+      <property name="styleSheet">
+       <string notr="true">#pushButton_ok {
+width: 100px;
+height: 37px;
+border-style: solid;
+border-width: 2px;
+border-color: #ffffff;
+color: #ffffff;
+background-color: #D93471;
+font-weight: bold;
+}
+#pushButton_ok:hover {
+background-color: #ef6799;
+border-color: #b8ffbd;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>170</y>
+     <width>221</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="lineEdit_Cont"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_Ctr"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_Eps"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
