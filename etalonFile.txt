@@ -1,0 +1,11 @@
+"R":Orel & Reshka,25
+"C":Africa,30370000,22.10
+"T":Egypt,Cairo,2
+"E":03/02/2017,Cairo,Regina Todorenko,true,Nastya Korotkaya,false,6712.24
+"C":North America,24709999,16.50
+"T":USA,Washington,51
+"E":20/02/2011,Las Vegas,Alan Badoev,true,Zhanna Badoeva,false,10289.95
+"E":28/12/2015,New York,Lesya Nikitjuk,false,Alan Badoev,true,15520.68
+"C":South America,17820000,12.00
+"T":Brazil,Brasília,12
+"E":07/12/2015,Manaus ,Regina Todorenko,true,Kolya Serga,false,4331.54
